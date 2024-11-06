@@ -10,7 +10,7 @@ import { accessTokenGenerator } from "../functions";
 import Cookies from "js-cookie";
 
 export const BASE_URL =
-  "https://back.meta.metatask.international/api/";
+  "https://metatask-backend.ibgyzs.easypanel.host/api/";
 
 export const apiEndpoints = createApi({
   tagTypes: [
