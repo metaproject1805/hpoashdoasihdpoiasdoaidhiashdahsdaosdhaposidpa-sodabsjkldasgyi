@@ -1,0 +1,660 @@
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'next' imported from /home2/meta18123211/frontend/server.mjs
+Did you mean to import next/dist/server/next.js?
+    at new NodeError (node:internal/errors:405:5)
+    at packageResolve (node:internal/modules/esm/resolve:916:9)
+    at moduleResolve (node:internal/modules/esm/resolve:973:20)
+    at defaultResolve (node:internal/modules/esm/resolve:1206:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:404:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:373:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:250:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:76:39)
+    at link (node:internal/modules/esm/module_job:75:36) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v18.20.4
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151
+            throw new Error(`Could not find a production build in the '${opts.config.distDir}' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id`);
+                  ^
+
+Error: Could not find a production build in the '.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at setupFsCheck (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/filesystem.js:151:19)
+    at async initialize (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:61:23)
+    at async NextCustomServer.prepare (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js:242:28)
+
+Node.js v18.20.4
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home2/meta18123211/frontend/.next/cache/webpack/client-development/0.pack.gz_' -> '/home2/meta18123211/frontend/.next/cache/webpack/client-development/0.pack.gz'
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home2/meta18123211/frontend/.next/cache/webpack/server-development/0.pack.gz_' -> '/home2/meta18123211/frontend/.next/cache/webpack/server-development/0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home2/meta18123211/frontend/.next/cache/webpack/client-development/0.pack.gz_' -> '/home2/meta18123211/frontend/.next/cache/webpack/client-development/0.pack.gz'
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home2/meta18123211/frontend/.next/cache/webpack/client-development/0.pack.gz_' -> '/home2/meta18123211/frontend/.next/cache/webpack/client-development/0.pack.gz'
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home2/meta18123211/frontend/.next/cache/webpack/server-development/0.pack.gz_' -> '/home2/meta18123211/frontend/.next/cache/webpack/server-development/0.pack.gz'
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- /home2/meta18123211/frontend/.next/server/webpack-runtime.js
+- /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:203:28)
+    at /home2/meta18123211/frontend/.next/server/webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:167:22)
+    at /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15078
+    at Object.<anonymous> (/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15119)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:816:17)
+    at async /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:377:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home2/meta18123211/frontend/.next/server/webpack-runtime.js',
+    '/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js'
+  ],
+  page: '/favicon.ico'
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- /home2/meta18123211/frontend/.next/server/webpack-runtime.js
+- /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:203:28)
+    at /home2/meta18123211/frontend/.next/server/webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:167:22)
+    at /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15078
+    at Object.<anonymous> (/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15119)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:816:17)
+    at async /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:377:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home2/meta18123211/frontend/.next/server/webpack-runtime.js',
+    '/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js'
+  ],
+  page: '/favicon.ico'
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- /home2/meta18123211/frontend/.next/server/webpack-runtime.js
+- /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:203:28)
+    at /home2/meta18123211/frontend/.next/server/webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:167:22)
+    at /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15078
+    at Object.<anonymous> (/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15119)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:816:17)
+    at async /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:377:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home2/meta18123211/frontend/.next/server/webpack-runtime.js',
+    '/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js'
+  ],
+  page: '/favicon.ico'
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- /home2/meta18123211/frontend/.next/server/webpack-runtime.js
+- /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:203:28)
+    at /home2/meta18123211/frontend/.next/server/webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:167:22)
+    at /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15078
+    at Object.<anonymous> (/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15119)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:816:17)
+    at async /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:377:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home2/meta18123211/frontend/.next/server/webpack-runtime.js',
+    '/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js'
+  ],
+  page: '/favicon.ico'
+}
+ ⨯ Error: Cannot find module './948.js'
+Require stack:
+- /home2/meta18123211/frontend/.next/server/webpack-runtime.js
+- /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js
+- /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at __webpack_require__.f.require (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:203:28)
+    at /home2/meta18123211/frontend/.next/server/webpack-runtime.js:116:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:115:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home2/meta18123211/frontend/.next/server/webpack-runtime.js:167:22)
+    at /home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15078
+    at Object.<anonymous> (/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js:12:15119)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js:109:84)
+    at /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:84
+    at async loadComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:710:36)
+    at async DevServer.findPageComponents (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1917:24)
+    at async DevServer.renderToResponseImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:1969:32)
+    at async DevServer.pipeImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/base-server.js:816:17)
+    at async /home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async NextCustomServer.requestHandlerImpl [as requestHandler] (/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js:377:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home2/meta18123211/frontend/.next/server/webpack-runtime.js',
+    '/home2/meta18123211/frontend/.next/server/app/favicon.ico/route.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/require.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/load-components.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/build/utils.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/router-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/lib/start-server.js',
+    '/home2/meta18123211/nodevenv/frontend/18/lib/node_modules/next/dist/server/next.js'
+  ],
+  page: '/favicon.ico'
+}
