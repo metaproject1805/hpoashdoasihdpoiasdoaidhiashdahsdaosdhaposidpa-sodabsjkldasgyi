@@ -47,6 +47,8 @@ export interface ApiResponseWithdrawalInterface extends ApiResponseInterface {
 
 export interface WithdrawalInterface{
   wallet_address: string,
+  username: string
+  email: string,
   payment_status: string,
   amount: number,
   id:number,

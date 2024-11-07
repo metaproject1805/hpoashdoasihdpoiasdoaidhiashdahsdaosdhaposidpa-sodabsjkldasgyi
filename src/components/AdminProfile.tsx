@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { BASE_URL } from "@/config";
+import Link from "next/link";
 import backgroundImage from "../../public/back2.jpg";
 import { Icon } from "@iconify/react";
 import AllUser from "./Admin/AllUser";
@@ -14,9 +14,8 @@ import Withdrawal from "./Admin/Withdrawal";
 import { showErrorMessage } from "@/utils/functions";
 import { useGetAdminCounterQuery } from "@/utils/apiRoutes/apiEndpoint";
 
-
 const AdminPage = () => {
-  let token ="jj"
+  let token = "jj";
   const {
     data: userCount,
     isLoading,
@@ -25,7 +24,14 @@ const AdminPage = () => {
   } = useGetAdminCounterQuery();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [tab, setTab] = useState<"All"|"PendingPackage"|"PendingInvestment"|"Inactive"|"Active"|"Withdrawal" >("All")
+  const [tab, setTab] = useState<
+    | "All"
+    | "PendingPackage"
+    | "PendingInvestment"
+    | "Inactive"
+    | "Active"
+    | "Withdrawal"
+  >("All");
 
   const closeModal = () => {
     setSelectedImage(null);
@@ -65,7 +71,6 @@ const AdminPage = () => {
     );
   };
 
-
   const LoaderModal = ({ isLoading }: { isLoading: boolean }) => {
     if (!isLoading) return null;
 
@@ -85,7 +90,11 @@ const AdminPage = () => {
   }
 
   if (isError) {
-    return <div className="text-red-500 text-center mt-10">{showErrorMessage(error)}</div>;
+    return (
+      <div className="text-red-500 text-center mt-10">
+        {showErrorMessage(error)}
+      </div>
+    );
   }
 
   return (
@@ -205,7 +214,7 @@ const AdminPage = () => {
             tab={tab}
             setIsModalOpen={setIsModalOpen}
             setSelectedImage={setSelectedImage}
-          /> 
+          />
         ) : tab === "PendingInvestment" ? (
           <PendingInvestment
             tab={tab}
@@ -216,11 +225,9 @@ const AdminPage = () => {
           <InactiveUser tab={tab} />
         ) : tab === "Active" ? (
           <ActiveUser tab={tab} />
-        ) :  (
+        ) : (
           <Withdrawal tab={tab} />
-        )
-        
-        }
+        )}
       </div>
 
       {/* Modal for viewing image */}
@@ -229,6 +236,18 @@ const AdminPage = () => {
         onClose={closeModal}
         imageUrl={selectedImage}
       />
+
+      <div className=" mt-0 mb-[50px] md:mt-[30px]">
+        <Link
+          href="https://metatask-backend.ibgyzs.easypanel.host/admin/tasks/task/add/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="py-3 px-6 bg-gradient-to-r from-purple-600 to-indigo-500 hover:from-purple-700 hover:to-indigo-600 text-white rounded-full transition-all duration-300 font-bold shadow-lg flex items-center gap-2"
+        >
+          <Icon icon="cib:addthis" className="text-xl" />
+          Add Videos
+        </Link>
+      </div>
     </div>
   );
 };

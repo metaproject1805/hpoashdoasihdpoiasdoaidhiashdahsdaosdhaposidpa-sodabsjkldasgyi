@@ -110,7 +110,7 @@ const ActivationModal: React.FC<ActivationModalProps> = ({ onClose, keyPhase}) =
         return;
       }
       const response = await axios.post(
-        `${BASE_URL}/api/user/pass-key-activate/`,
+        `${BASE_URL}/user/pass-key-activate/`,
         phases,
         {
           headers: {

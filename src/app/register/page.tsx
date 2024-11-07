@@ -107,7 +107,7 @@ const validateForm = (): boolean => {
 
     try {
       const response = await axios.post(
-        `${BASE_URL}/api/user/register/`,
+        `${BASE_URL}/user/register/`,
         requestBody,
         {
           headers: {

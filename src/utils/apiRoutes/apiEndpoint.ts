@@ -4,13 +4,11 @@ import {
   UserDetails,
   CounterInterface,
   ApiResponseUserInterface,
-  ApiResponseWithdrawalInterface
+  ApiResponseWithdrawalInterface,
 } from "../types";
 import { accessTokenGenerator } from "../functions";
 import Cookies from "js-cookie";
-
-export const BASE_URL =
-  "https://metatask-backend.ibgyzs.easypanel.host/api/";
+import { BASE_URL } from "@/config";
 
 export const apiEndpoints = createApi({
   tagTypes: [
@@ -28,7 +26,7 @@ export const apiEndpoints = createApi({
     baseUrl: `${BASE_URL}`,
   }),
   endpoints: (build) => ({
-    getUserDetail: build.query<UserDetails, number|undefined>({
+    getUserDetail: build.query<UserDetails, number | undefined>({
       query: (id) => ({
         url: `user/detail/${id}/`,
         headers: {
@@ -155,6 +153,26 @@ export const apiEndpoints = createApi({
       invalidatesTags: ["userDetails"],
     }),
 
+    withdrawal: build.mutation<any, any>({
+      query: ({
+        data,
+      }: {
+        data: {
+          amount: Number;
+          username: string;
+          wallet_address: string;
+        };
+      }) => ({
+        url: "withdrawals/withdrawal-create/",
+        method: "POST",
+        body: data,
+        headers: {
+          Authorization: `Bearer ${accessTokenGenerator()}`,
+        },
+      }),
+      invalidatesTags: ["userDetails"],
+    }),
+
     submitVideo: build.mutation({
       query: ({ id }: { id: number }) => ({
         url: `tasks/task-submit/${id}/`,
@@ -194,9 +212,6 @@ export const apiEndpoints = createApi({
         Cookies.set("access-token", response.access, { expires: 1 });
         Cookies.set("refresh-token", response.refresh, { expires: 25 });
         window.location.href = "/profile";
-      },
-      transformErrorResponse:(error)=>{
-        console.log("error message is", error)
       },
     }),
 
@@ -287,6 +302,7 @@ export const {
   useHandleLoginMutation,
   useSubmitVideoMutation,
   useReadNotificationMutation,
+  useWithdrawalMutation,
 
   // Admin Post endpoints
   useAdminApprovePendingPackageMutation,

@@ -1,13 +1,19 @@
-// src/components/FAQ.tsx
-import React, { useState } from "react";
-import { Icon } from "@iconify/react"; // Import Iconify
-import faqs from "../Data/FaqData"; // Import FAQ data
+import React, { useState, useRef } from "react";
+import { Icon } from "@iconify/react";
+import faqs from "../Data/FaqData";
 
 const FAQ: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null); // Track which FAQ is open
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index); // Toggle FAQ open/close
+    // If the FAQ is closing and it's a video, pause and reset the video
+    if (openIndex === index && videoRefs.current[index]) {
+      videoRefs.current[index]?.pause();
+      videoRefs.current[index].currentTime = 0;
+    }
+    // Toggle FAQ open/close
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
@@ -42,7 +48,22 @@ const FAQ: React.FC = () => {
                 openIndex === index ? "max-h-screen" : "max-h-0"
               }`}
             >
-              <p className="text-purple-200">{faq.answer}</p>
+              {faq.answer.includes("https://") &&
+              faq.answer.endsWith(".mp4") ? (
+                <video
+                  controls
+                  width="100%"
+                  className="mt-4 rounded-lg"
+                  ref={(el) => {
+                    videoRefs.current[index] = el;
+                  }}
+                >
+                  <source src={faq.answer} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ) : (
+                <p className="text-purple-200 mt-4">{faq.answer}</p>
+              )}
             </div>
           </div>
         ))}

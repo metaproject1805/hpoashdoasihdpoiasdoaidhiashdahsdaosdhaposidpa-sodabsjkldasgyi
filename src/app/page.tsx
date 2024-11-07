@@ -26,10 +26,16 @@ const Home: React.FC = () => {
             fingertips.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/register" className="px-6 py-3 md:px-8 md:py-4 bg-purple-600 text-white rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out">
+            <Link
+              href="/register"
+              className="px-6 py-3 md:px-8 md:py-4 bg-purple-600 text-white rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out"
+            >
               Get Started
             </Link>
-            <Link href='/login' className="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-purple-600 text-purple-600 rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out">
+            <Link
+              href="/login"
+              className="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-purple-600 text-purple-600 rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-600 hover:text-white transition duration-300 ease-in-out"
+            >
               Learn More
             </Link>
           </div>
@@ -67,7 +73,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="py-12 px-6 mt-">
+      <div className="py-12 px-6">
         <h2 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600 mb-8">
           Why Choose Us?
         </h2>
@@ -75,45 +81,48 @@ const Home: React.FC = () => {
           <div className="bg-gray-800 bg-opacity-10 backdrop-blur-md p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="flex flex-col items-center">
               <Icon
-                icon="ph:video-fill"
+                icon="arcticons:ldb-trust"
                 className="text-purple-500 text-6xl mb-4"
               />
-              <h3 className="text-xl text-purple-400 font-semibold mb-2">
-                Video Monetization
+              <h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600 font-semibold mb-2">
+                Trust & Transparency
               </h3>
-              <p className="text-purple-200 text-center">
-                A personalized Video Monetization software that helps you earn
-                from other people&#39;s videos.
+              <p className="text-purple-200">
+                At MetaTask, we prioritize your trust. Our transparent processes
+                ensure you have a clear understanding of where and how your
+                investments are managed.
               </p>
             </div>
           </div>
           <div className="bg-gray-800 bg-opacity-10 backdrop-blur-md p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="flex flex-col items-center">
               <Icon
-                icon="mdi:rocket-launch"
-                className="text-green-500 text-6xl mb-4"
+                icon="mdi:encryption-secure"
+                className="text-purple-500 text-6xl mb-4"
               />
-              <h3 className="text-xl text-purple-400 font-semibold mb-2">
-                Fast Growth
+              <h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600 font-semibold mb-2">
+                Secure Platform
               </h3>
-              <p className="text-purple-200 text-center">
-                Your investments grow quickly with the guidance of industry
-                experts.
+              <p className="text-purple-200">
+                Licensed by the City of Chicago, we adhere to all regulations,
+                providing you with a secure environment to grow your
+                investments.
               </p>
             </div>
           </div>
           <div className="bg-gray-800 bg-opacity-10 backdrop-blur-md p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="flex flex-col items-center">
               <Icon
-                icon="mdi:cash-multiple"
-                className="text-blue-500 text-6xl mb-4"
+                icon="tabler:arrow-guide"
+                className="text-purple-500 text-6xl mb-4"
               />
-              <h3 className="text-xl text-purple-400 font-semibold mb-2">
-                Low Investment Threshold
+              <h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600 font-semibold mb-2">
+                Expert Guidance
               </h3>
-              <p className="text-purple-200 text-center">
-                Start with as little as $60, making investment accessible to
-                everyone.
+              <p className="text-purple-200">
+                Our team of experienced professionals is dedicated to guiding
+                you through the investment process, ensuring informed decisions
+                every step of the way.
               </p>
             </div>
           </div>
@@ -129,17 +138,27 @@ const Home: React.FC = () => {
           {/* Left Side - About Text */}
           <div className="lg:w-1/2 w-full space-y-8">
             <p className="text-purple-200 text-sm lg:text-[18px] leading-relaxed tracking-wide">
-              MetaTask Investments is your gateway to wealth-building with
-              cutting-edge and secure investment solutions. We aim to simplify
-              access to expert-guided opportunities, ensuring every
-              investor&#39;s success.
+              MetaTask is a premier investment platform dedicated to helping you
+              achieve your financial goals with ease. Our services are built on
+              a foundation of trust, transparency, and commitment, providing a
+              seamless investment experience tailored for each client.
             </p>
             <p className="text-purple-200 text-sm lg:text-[18px] leading-relaxed tracking-wide">
-              Begin your journey with MetaTask from as low as $60, receiving
-              tailored advice from professionals to realize your financial
-              dreams. Join thousands already benefiting from our secure
-              platform.
+              Based in the heart of Chicago, MetaTask is fully licensed and
+              regulated, offering a secure space for your investments. We strive
+              to be your trusted partner in navigating the complexities of the
+              financial world, ensuring every step you take with us is guided by
+              integrity and professionalism.
             </p>
+<div className="mt-6">
+
+            <Link
+              href="/about"
+              className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-purple-600 text-white rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out"
+            >
+              Learn More
+            </Link>
+</div>
           </div>
 
           {/* Right Side - About Image */}
@@ -168,9 +187,11 @@ const Home: React.FC = () => {
             Our Mission
           </h2>
           <p className="text-purple-200 text-lg lg:text-2xl leading-relaxed max-w-2xl">
-            At <strong>MetaTask Investments</strong>, we aim to empower
-            individuals and businesses to reach financial freedom through expert
-            investment strategies and personalized financial solutions.
+            At <strong>MetaTask Investments</strong>, Our mission is to empower
+            individuals and businesses to achieve their financial aspirations
+            through innovative investment solutions. We believe in creating
+            opportunities for our clients to grow their wealth while providing
+            the highest level of transparency and customer service.
           </p>
         </div>
       </div>
@@ -231,7 +252,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Team Section */}
-      <div className="py-16 px-8 bg-gray-900 bg-opacity-10 backdrop-blur-lg rounded-2xl shadow-xl mt-16 max-w-6xl mx-auto">
+      <div className="py-16 px-8 justify-center bg-gray-900 bg-opacity-10 backdrop-blur-lg rounded-2xl shadow-xl mt-16 max-w-6xl mx-auto">
         <div className="text-center">
           <Icon
             icon="mdi:account-group-outline"
@@ -242,34 +263,22 @@ const Home: React.FC = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 justify-items-center">
+        <div className=" mt-10 justify-items-center">
           {/* Team Member */}
           <div className="bg-gray-800 bg-opacity-10 p-8 rounded-xl text-center transform hover:scale-105 hover:bg-opacity-20 transition duration-300 ease-in-out">
             <Icon
               icon="mdi:account-tie-outline"
               className="text-6xl text-purple-400 mb-4"
             />
-            <h3 className="text-xl font-bold text-purple-400">John Doe</h3>
+            <h3 className="text-xl font-bold text-purple-400">Howard Griffin</h3>
             <p className="text-purple-200">CEO & Founder</p>
             <p className="mt-4 text-purple-200">
-              John has over 20 years of experience and is dedicated to helping
+              Howard has over 20 years of experience and is dedicated to helping
               clients grow their wealth.
             </p>
           </div>
 
-          {/* Additional Team Member */}
-          <div className="bg-gray-800 bg-opacity-10 p-8 rounded-xl text-center transform hover:scale-105 hover:bg-opacity-20 transition duration-300 ease-in-out">
-            <Icon
-              icon="mdi:account-tie-outline"
-              className="text-6xl text-purple-400 mb-4"
-            />
-            <h3 className="text-xl font-bold text-purple-400">Jane Smith</h3>
-            <p className="text-purple-200">Chief Financial Officer</p>
-            <p className="mt-4 text-purple-200">
-              Jane ensures clients make informed decisions with her expertise in
-              financial strategy.
-            </p>
-          </div>
+         
         </div>
       </div>
 
@@ -319,7 +328,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Faq Section */}
-      <FAQ/>
+      <FAQ />
     </div>
   );
 };

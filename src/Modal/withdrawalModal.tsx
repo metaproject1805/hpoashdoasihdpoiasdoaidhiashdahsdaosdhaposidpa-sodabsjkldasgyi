@@ -1,12 +1,14 @@
 "use client";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useState } from "react";
 import { Icon } from "@iconify/react";
-import axios from "axios";
-import Cookies from "js-cookie";
-import jwt from "jsonwebtoken";
-import { UserDetails } from "@/utils/types";
 import { FaTimes } from "react-icons/fa";
-import { BASE_URL } from "@/config";
+
+import {
+  useGetUserDetailQuery,
+  useWithdrawalMutation,
+} from "@/utils/apiRoutes/apiEndpoint";
+import { showErrorMessage } from "@/utils/functions";
+import { useToken } from "@/utils/customHooks";
 
 interface WithdrawalModalProps {
   isOpen: boolean;
@@ -23,110 +25,38 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
   onClose,
 }) => {
   // State variables
-  const [formData, setFormData] = useState({ amount: 0, wallet_address: "" });
-  const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
-  const [isProcessingModalOpen, setIsProcessingModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    amount: 0,
+    wallet_address: "",
+
+  });
+  const { tokenObject } = useToken();
+  const { data: userDetails } = useGetUserDetailQuery(tokenObject?.user_id);
+  const [withdrawal, { isLoading, isSuccess, isError, error }] =
+    useWithdrawalMutation();
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [userId, setUserId] = useState<string | null>(null);
-
-  const accessToken = Cookies.get("access-token");
-
-  // Decode JWT and set user ID
-  useEffect(() => {
-    if (accessToken) {
-      try {
-        const decoded = jwt.decode(accessToken) as DecodedToken;
-        const currentTime = Math.floor(Date.now() / 1000);
-
-        if (decoded.exp && decoded.exp < currentTime) {
-          console.error("Token has expired");
-          setError("Session expired. Please log in again.");
-          return;
-        }
-
-        setUserId(decoded.user_id);
-      } catch (error) {
-        console.error("Failed to decode token:", error);
-        setError("Invalid token. Please log in again.");
-      }
-    }
-  }, [accessToken]);
-
-  // Fetch user details based on user ID
-  const fetchUserDetails = useCallback(async () => {
-    if (!userId) return; // Prevent execution if userId is not available
-
-    try {
-      const response = await axios.get(
-        `${BASE_URL}/api/user/detail/${userId}/`,
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-      setUserDetails(response.data);
-    } catch (error) {
-      console.error("Failed to fetch user details:", error);
-    } finally {
-      setLoading(false);
-    }
-  }, [userId, accessToken]); // Add userId and accessToken as dependencies
-
-  useEffect(() => {
-    fetchUserDetails(); // Call fetchUserDetails
-  }, [fetchUserDetails]); // Only depend on fetchUserDetails
 
   // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const data = {
+      amount: formData?.amount,
+      wallet_address: formData?.wallet_address,
+    };
 
     // Validate amount
     if (
       formData.amount <= 0 ||
       formData.amount > parseFloat(userDetails?.balance ?? "0")
     ) {
-      setError("Invalid withdrawal amount.");
       return;
     }
 
-    setIsProcessingModalOpen(true);
+    withdrawal(data);
 
-    try {
-      // Send withdrawal request to the API
-      const response = await axios.post(
-        `${BASE_URL}/api/withdrawals/withdrawal-create/`,
-        {
-          amount: formData.amount,
-          wallet_address: formData.wallet_address,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        }
-      );
-
-      // Check response status (you can adjust this according to your API's response)
-      if (response.status === 200) {
-        setIsSuccessModalOpen(true); // Show success modal
-      } else {
-        setError("Failed to process withdrawal. Please try again.");
-      }
-    } catch (error) {
-      // Handle error during API call
-      setError("Failed to process withdrawal. Please try again.");
-    } finally {
-      setIsProcessingModalOpen(false);
+    if (isSuccess) {
+      setIsSuccessModalOpen(true); // Show success modal
     }
-  };
-
-  const closeModals = () => {
-    setIsProcessingModalOpen(false);
-    setIsSuccessModalOpen(false);
-    onClose(); // Close the original modal too
   };
 
   const isWithdrawable = parseFloat(userDetails?.balance ?? "0") > 50;
@@ -152,16 +82,17 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
             Please enter your wallet address and amount to withdraw.
           </p>
 
-          {error && <p className="text-red-500">{error}</p>}
+          {error && <p className="text-red-500">{showErrorMessage(error)}</p>}
 
           <form onSubmit={handleSubmit} className="space-y-4">
+           
             <div>
               <label className="block text-lg mb-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">
                 Wallet Address
               </label>
               <input
                 type="text"
-                value={formData.wallet_address}
+                value={formData?.wallet_address}
                 onChange={(e) =>
                   setFormData({ ...formData, wallet_address: e.target.value })
                 }
@@ -175,7 +106,7 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
               </label>
               <input
                 type="number"
-                value={formData.amount}
+                value={formData?.amount}
                 onChange={(e) =>
                   setFormData({
                     ...formData,
@@ -212,7 +143,7 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
       )}
 
       {/* Processing Modal */}
-      {isProcessingModalOpen && (
+      {isLoading && (
         <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-lg flex justify-center items-center z-50 p-4">
           <div className="bg-white rounded-3xl p-8 max-w-lg mx-auto shadow-2xl">
             <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">

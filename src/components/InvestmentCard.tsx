@@ -24,7 +24,7 @@ const InvestmentCard: React.FC<{
   const level = data?.partnership_level || 0
   const planLevel = data?.investment?.level || 0
   const payment_status = data?.investment?.payment_status || null
-  
+
 
   // Determine if the current plan is locked based on user's investment level
   const isLocked = (investLevel: number, availableTo?: string): boolean => {
@@ -56,7 +56,7 @@ const InvestmentCard: React.FC<{
     return <ErrorComponent error={error} />;
   } else {
     return (
-      <div className="mt-[100px] px-4 lg:px-0">
+      <div className="mt-[100px] px-4 lg:px-0 mb-[100px]">
         {/* Main container for the page */}
         <div className="max-w-6xl mx-auto bg-black/10 backdrop-blur rounded-3xl p-10 shadow-2xl border border-blue-200">
           <h1 className="text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600 mb-6 tracking-wide animate-fade-in">

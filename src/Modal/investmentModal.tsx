@@ -6,7 +6,7 @@ import { showErrorMessage } from "@/utils/functions";
 
 interface CombinedModalProps {
   selectedPackage: {
-    duration: string; 
+    duration: string;
   } | null;
   closeModal: () => void;
 }
@@ -15,29 +15,28 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
   selectedPackage,
   closeModal,
 }) => {
-  const [buyInvestment, {isLoading, error, isError, isSuccess}] = useBuyInvestmentMutation()
+  const [buyInvestment, { isLoading, error, isError, isSuccess }] =
+    useBuyInvestmentMutation();
   const [isFirstModalOpen, setIsFirstModalOpen] = useState(true);
   const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
   const [isThirdModalOpen, setIsThirdModalOpen] = useState(false);
   const [isProcessingModalOpen, setIsProcessingModalOpen] = useState(false);
-  const [rr, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<boolean>(false);
+  const [err, setError] = useState<string | null>(null);
 
   const [formData, setFormData] = useState({
-    duration: "", 
+    duration: "",
     price: "",
     payment_slip: null as File | null,
-    wallet_id: "", 
+    wallet_id: "",
   });
-
 
   useEffect(() => {
     if (selectedPackage && isSecondModalOpen) {
       setFormData({
-        duration: selectedPackage.duration, 
+        duration: selectedPackage.duration,
         price: "",
         payment_slip: null,
-        wallet_id: "",  
+        wallet_id: "",
       });
     }
   }, [selectedPackage, isSecondModalOpen]);
@@ -55,27 +54,25 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     e.preventDefault();
     setError(null);
 
-      if (Number(formData.price) < 100) {
-        setError("The minimum amount is $100.");
-        return;
-      }
+    if (Number(formData.price) < 100) {
+      setError("The minimum amount is $100.");
+      return;
+    }
 
     setIsProcessingModalOpen(true);
 
     // Create a FormData object
     const data = new FormData();
-    data.append("duration", formData.duration); 
+    data.append("duration", formData.duration);
     data.append("price", formData.price);
-    data.append("wallet_id", formData.wallet_id); ; 
+    data.append("wallet_id", formData?.wallet_id);
     if (formData.payment_slip) {
       data.append("payment_slip", formData.payment_slip);
     }
     setIsThirdModalOpen(true);
 
-    buyInvestment({data:data})
-      setIsProcessingModalOpen(false);
-      setIsSecondModalOpen(false);
-      setIsThirdModalOpen(false);
+    buyInvestment({ data: data });
+    setIsSecondModalOpen(false);
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -95,6 +92,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     setError(null);
   };
 
+
   return (
     <>
       {isFirstModalOpen && (
@@ -110,7 +108,9 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
               Payment Instructions
             </h2>
             <p className="text-lg mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">
-              Transfer to the following wallet address:
+              Please follow the instructions below to ensure a successful
+              transaction: <br /> Wallet Type: Please make sure to transfer the funds
+              strictly to the TRC20 wallet address Below:
             </p>
             <div className="w-full bg-gradient-to-r from-gray-100 to-gray-200 p-4 rounded-lg mb-6 text-center text-[14px] font-mono text-purple-900 border border-gray-300 shadow-sm flex items-center justify-between">
               <span>{WALLET_ID}</span>
@@ -167,12 +167,13 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
                   type="number"
                   value={formData.price}
                   onChange={(e) =>
-                    setFormData({ ...formData, price: e.target.value })
+                    setFormData({ ...formData, price: e.target?.value })
                   }
                   className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
                   min="100"
                   required
                 />
+                {err && <p className="text-red-500">{err}</p>}
               </div>
 
               <div>
@@ -181,10 +182,11 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
                 </label>
                 <input
                   type="text"
-                  value={formData.wallet_id}
-                  onChange={(e) =>
-                    setFormData({ ...formData, wallet_id: e.target.value })
-                  }
+                  value={formData?.wallet_id}
+                  onChange={(e) => {
+                    setFormData({ ...formData, wallet_id: e.target?.value });
+                    console.log(e.target.value);
+                  }}
                   className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
                   required
                 />

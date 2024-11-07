@@ -24,14 +24,13 @@ export const showErrorMessage = (
 ) => {
   const defaultMessage = "Internal server error";
 
-  console.log("data from function", error);
   // Check if the error is a FetchBaseQueryError and has a data field
   if (isFetchBaseQueryError(error) && isErrorData(error.data)) {
     const { detail, message } = error.data;
     if (detail) {
-      return detail;
+      return JSON.stringify(detail);
     } else if (message) {
-      return message;
+      return JSON.stringify(message);
     }
   }
 
@@ -42,7 +41,7 @@ export function accessTokenGenerator() {
   const token = Cookies.get("access-token");
 
   if (!token) {
-    return undefined
+    return undefined;
     // throw new Error("No access token found");
   }
   return token;

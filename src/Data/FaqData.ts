@@ -1,4 +1,3 @@
-
 const faqs = [
   {
     question: "What is MetaTask Investments?",
@@ -7,13 +6,17 @@ const faqs = [
   },
   {
     question: "How can i navigate through this website?",
-    answer:
-      "Watch this Video",
+    answer: "Watch this Video",
   },
   {
     question: "How do I get started with investing?",
     answer:
-      "You can start investing with MetaTask by signing up and making an initial investment of as little as $60.",
+      "https://res.cloudinary.com/dwe58zkhv/video/upload/v1730976560/how_to_buy_an_investment_plan_on_metatask_hffzp8.mp4",
+  },
+  {
+    question: "How do I buy a package?",
+    answer:
+      "https://res.cloudinary.com/dwe58zkhv/video/upload/v1730968770/how_to_buy_a_package_on_metatask_qlkw5u.mp4",
   },
   {
     question: "Is MetaTask safe to use?",
@@ -31,15 +34,14 @@ const faqs = [
       "You can easily withdraw your earnings by navigating to the withdrawal section in your dashboard. Post your wallet ID and the amount you want to withdraw.",
   },
   {
-  "question": "What is the minimum withdrawal amount?",
-  "answer": 
-    "The minimum amount required to make a withdrawal is set at $50. Users can only request withdrawals once their earnings or balance reach at least $50."
+    question: "What is the minimum withdrawal amount?",
+    answer:
+      "The minimum amount required to make a withdrawal is set at $50. Users can only request withdrawals once their earnings or balance reach at least $50.",
   },
 
   {
     question: "Can I manage multiple accounts on MetaTask?",
-    answer:
-      "Currently, MetaTask allows one account per user.",
+    answer: "Currently, MetaTask allows one account per user.",
   },
   {
     question: "What happens if I forget my password?",

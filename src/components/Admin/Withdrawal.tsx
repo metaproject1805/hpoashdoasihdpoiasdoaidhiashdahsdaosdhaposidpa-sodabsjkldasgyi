@@ -41,6 +41,12 @@ const Withdrawal = ({
                 withdrawalDetails.results.map((withdrawal) => (
                   <tr key={withdrawal.id}>
                     <td className="py-2 px-4 border-t">
+                      {withdrawal.username || "N/A"}
+                    </td>
+                    <td className="py-2 px-4 border-t">
+                      {withdrawal.email || "No Email address"}
+                    </td>
+                    <td className="py-2 px-4 border-t">
                       {withdrawal.wallet_address || "No wallet address"}
                     </td>
                     <td className="py-2 px-4 border-t">{withdrawal.amount}</td>

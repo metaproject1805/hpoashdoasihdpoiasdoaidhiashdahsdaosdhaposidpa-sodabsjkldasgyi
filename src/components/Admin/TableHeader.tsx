@@ -13,6 +13,9 @@ export default function TableHeader({
         {/* Conditionally render table headers based on type */}
         {type === "Withdrawal" ? (
           <>
+
+            <th className="py-2 px-4">Name</th>
+            <th className="py-2 px-4">Email</th>
             <th className="py-2 px-4">Wallet Address</th>
             <th className="py-2 px-4">Amount</th>
             <th className="py-2 px-4">Status</th>

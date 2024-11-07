@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     setIsAuthenticated(authenticated);
 
     // Redirect if not authenticated and not on the allowed paths
-    const allowedPaths = ["/", "/login", "/register", "/forgotPassword"];
+    const allowedPaths = ["/", "/login", "/register", "/forgotPassword", "/about"];
     if (!authenticated && !allowedPaths.includes(pathname)) {
       router.push("/login");
     }

@@ -27,7 +27,6 @@ const ProfilePage = ({
   const [showActivateModal, setShowActivateModal] = useState(false);
   const [showWithdrawalModal, setShowWithdrawalModal] =
     useState<boolean>(false);
-  const [loading, setLoading] = useState(true);
   const [showReferralModal, setShowReferralModal] = useState(false);
   const [copied, setCopied] = useState(false);
 
