@@ -5,6 +5,7 @@ import backgroundImage from "../../public/back2.jpg";
 import Image from "next/image";
 import FAQ from "@/components/FAQ";
 import Link from "next/link";
+import Ceo from "../../public/ceo.jpeg"
 
 const Home: React.FC = () => {
   return (
@@ -150,15 +151,14 @@ const Home: React.FC = () => {
               financial world, ensuring every step you take with us is guided by
               integrity and professionalism.
             </p>
-<div className="mt-6">
-
-            <Link
-              href="/about"
-              className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-purple-600 text-white rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out"
-            >
-              Learn More
-            </Link>
-</div>
+            <div className="mt-6">
+              <Link
+                href="/about"
+                className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-purple-600 text-white rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
 
           {/* Right Side - About Image */}
@@ -263,22 +263,24 @@ const Home: React.FC = () => {
           </h2>
         </div>
 
-        <div className=" mt-10 justify-items-center">
+        <div className="flex mt-10 justify-items-center">
           {/* Team Member */}
-          <div className="bg-gray-800 bg-opacity-10 p-8 rounded-xl text-center transform hover:scale-105 hover:bg-opacity-20 transition duration-300 ease-in-out">
-            <Icon
-              icon="mdi:account-tie-outline"
-              className="text-6xl text-purple-400 mb-4"
+          <div className="flex flex-col bg-gray-800 bg-opacity-10 p-8 rounded-xl items-center justify-center text-center transform hover:scale-105 hover:bg-opacity-20 transition duration-300 ease-in-out">
+          
+            <Image
+              src={Ceo}
+              alt="Howard Griffin"
+              className="object-cover h-[200px] w-[200px] mb-[40px] rounded-full"
             />
-            <h3 className="text-xl font-bold text-purple-400">Howard Griffin</h3>
+            <h3 className="text-xl font-bold text-purple-400">
+              Howard Griffin
+            </h3>
             <p className="text-purple-200">CEO & Founder</p>
             <p className="mt-4 text-purple-200">
               Howard has over 20 years of experience and is dedicated to helping
               clients grow their wealth.
             </p>
           </div>
-
-         
         </div>
       </div>
 

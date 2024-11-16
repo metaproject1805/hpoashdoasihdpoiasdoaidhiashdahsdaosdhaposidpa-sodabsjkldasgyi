@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
+import LoadingComponent from "./LoadingComponent";
 import Link from "next/link";
 import Cookies from "js-cookie";
 import NotificationCounter from "./NotificationCounter";

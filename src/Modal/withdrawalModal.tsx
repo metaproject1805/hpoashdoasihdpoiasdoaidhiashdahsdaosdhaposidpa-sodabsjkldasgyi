@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { FaTimes } from "react-icons/fa";
-
 import {
   useGetUserDetailQuery,
   useWithdrawalMutation,
@@ -28,7 +27,6 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
   const [formData, setFormData] = useState({
     amount: 0,
     wallet_address: "",
-
   });
   const { tokenObject } = useToken();
   const { data: userDetails } = useGetUserDetailQuery(tokenObject?.user_id);
@@ -37,27 +35,35 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
 
   // Handle form submission
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const data = {
-      amount: formData?.amount,
-      wallet_address: formData?.wallet_address,
-    };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-    // Validate amount
-    if (
-      formData.amount <= 0 ||
-      formData.amount > parseFloat(userDetails?.balance ?? "0")
-    ) {
-      return;
-    }
+  // Validate the form data
+  if (!formData.wallet_address || formData.amount <= 0) {
+    console.error(
+      "Invalid data: Amount must be greater than 0 and wallet address is required."
+    );
+    return;
+  }
 
-    withdrawal(data);
-
-    if (isSuccess) {
-      setIsSuccessModalOpen(true); // Show success modal
-    }
+  // Construct the payload
+  const payload = {
+    data: {
+      amount: formData.amount,
+      wallet_address: formData.wallet_address,
+    },
   };
+
+  console.log("Payload to send:", payload); // Log for debugging
+
+  try {
+    await withdrawal(payload).unwrap(); // Call mutation with correct structure
+    setIsSuccessModalOpen(true); // Show success modal after successful withdrawal
+  } catch {
+    console.log("an error occurerd while submitting your request")
+  }
+};
+
 
   const isWithdrawable = parseFloat(userDetails?.balance ?? "0") > 50;
 
@@ -85,7 +91,6 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
           {error && <p className="text-red-500">{showErrorMessage(error)}</p>}
 
           <form onSubmit={handleSubmit} className="space-y-4">
-           
             <div>
               <label className="block text-lg mb-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">
                 Wallet Address
@@ -110,7 +115,7 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
                 onChange={(e) =>
                   setFormData({
                     ...formData,
-                    amount: parseFloat(e.target.value),
+                    amount: Number(e.target.value),
                   })
                 }
                 className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
@@ -160,14 +165,12 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
       {isSuccessModalOpen && (
         <div className="fixed inset-0 bg-black/10 backdrop-blur-lg flex justify-center items-center z-50 p-4">
           <div className="bg-black rounded-3xl p-8 max-w-lg mx-auto shadow-2xl relative">
-            {" "}
-            {/* Add relative positioning here */}
             <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">
               Success!
             </h2>
             <button
               onClick={onClose}
-              className="absolute top-2 right-2 text-purple-500 hover:text-red-500" // Keep this absolute for positioning within the relative parent
+              className="absolute top-2 right-2 text-purple-500 hover:text-red-500"
             >
               <FaTimes />
             </button>

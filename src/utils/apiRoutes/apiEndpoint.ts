@@ -159,7 +159,6 @@ export const apiEndpoints = createApi({
       }: {
         data: {
           amount: Number;
-          username: string;
           wallet_address: string;
         };
       }) => ({

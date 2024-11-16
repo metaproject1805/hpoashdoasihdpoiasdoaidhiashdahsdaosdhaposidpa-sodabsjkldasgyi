@@ -5,8 +5,9 @@ const faqs = [
       "MetaTask Investments provides cutting-edge, expert-guided investment solutions to help grow your wealth.",
   },
   {
-    question: "How can i navigate through this website?",
-    answer: "Watch this Video",
+    question: "How can i Register on MetaTask?",
+    answer:
+      "https://res.cloudinary.com/dwe58zkhv/video/upload/v1731043096/how_to_register_on_metatask_ip3m5e.mp4",
   },
   {
     question: "How do I get started with investing?",

@@ -237,7 +237,7 @@ const AdminPage = () => {
         imageUrl={selectedImage}
       />
 
-      <div className=" mt-0 mb-[50px] md:mt-[30px]">
+      <div className=" mt-[35px] mb-[50px] md:mt-[30px]">
         <Link
           href="https://metatask-backend.ibgyzs.easypanel.host/admin/tasks/task/add/"
           target="_blank"

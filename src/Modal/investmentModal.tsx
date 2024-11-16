@@ -96,8 +96,8 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
   return (
     <>
       {isFirstModalOpen && (
-        <div className="fixed w-full inset-0 bg-black bg-opacity-50 backdrop-blur-lg flex justify-center items-center z-50 p-4">
-          <div className="bg-white/90 rounded-3xl p-8 max-w-lg mx-auto shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105 relative">
+        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-lg flex justify-center items-center z-50 p-4">
+          <div className=" rounded-3xl p-8 max-w-lg mx-auto shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105 relative">
             <button
               className="absolute top-2 right-2 text-purple-400 hover:text-purple-600 transition-colors duration-300"
               onClick={closeModals}
@@ -135,7 +135,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
 
       {isSecondModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-lg flex justify-center items-center z-50  p-4">
-          <div className="bg-white/90 h-screen mt-[100px] rounded-3xl p-8 max-w-lg mx-auto shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105 relative">
+          <div className="h-screen mt-[100px] rounded-3xl p-8 max-w-lg mx-auto shadow-2xl transition-transform duration-300 ease-in-out transform hover:scale-105 relative">
             <button
               className="absolute top-2 right-2 text-purple-400 hover:text-purple-600 transition-colors duration-300"
               onClick={closeModals}
