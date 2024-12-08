@@ -3,12 +3,20 @@ import { InvestmentPlanInterface } from "@/utils/types";
 
 export const investmentPlans: InvestmentPlanInterface[] = [
   {
+    plan: "14-days investment plan",
+    dailyProfit: "1%",
+    minInvestment: "10 USDT",
+    periodicInterest: "140%",
+    duration: "14 Days",
+    level: 1,
+  },
+  {
     plan: "7-days investment plan",
     dailyProfit: "1%",
     minInvestment: "100 USDT",
     periodicInterest: "107%",
     duration: "7 Days",
-    level: 1,
+    level: 2,
   },
   {
     plan: "30-days investment plan",
@@ -16,7 +24,7 @@ export const investmentPlans: InvestmentPlanInterface[] = [
     minInvestment: "100 USDT",
     periodicInterest: "139%",
     duration: "30 Days",
-    level: 2,
+    level: 3,
   },
   {
     plan: "60-days investment plan",
@@ -24,7 +32,7 @@ export const investmentPlans: InvestmentPlanInterface[] = [
     minInvestment: "100 USDT",
     periodicInterest: "220%",
     duration: "60 Days",
-    level: 3,
+    level: 4,
   },
   {
     plan: "90-days investment plan",
@@ -32,7 +40,7 @@ export const investmentPlans: InvestmentPlanInterface[] = [
     minInvestment: "100 USDT",
     periodicInterest: "460%",
     duration: "90 Days",
-    level: 4,
+    level: 5,
   },
   {
     plan: "120-days investment plan",
@@ -40,7 +48,7 @@ export const investmentPlans: InvestmentPlanInterface[] = [
     minInvestment: "100 USDT",
     periodicInterest: "700%",
     duration: "120 Days",
-    level: 5,
+    level: 6,
   },
   {
     plan: "360-days investment plan",
@@ -49,7 +57,7 @@ export const investmentPlans: InvestmentPlanInterface[] = [
     minInvestment: "500 USDT",
     periodicInterest: "2980%",
     duration: "360 Days",
-    level: 6,
+    level: 7,
   },
   {
     plan: "1080-days investment plan",
@@ -58,6 +66,6 @@ export const investmentPlans: InvestmentPlanInterface[] = [
     minInvestment: "1000 USDT",
     periodicInterest: "13060%",
     duration: "1080 Days",
-    level: 7,
+    level: 8,
   },
 ];

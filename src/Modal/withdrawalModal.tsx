@@ -65,7 +65,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 };
 
 
-  const isWithdrawable = parseFloat(userDetails?.balance ?? "0") > 50;
+  const isWithdrawable = parseFloat(userDetails?.balance ?? "0") > 30;
 
   if (!isOpen) return null;
 
