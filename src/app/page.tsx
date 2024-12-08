@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             Grow Your Wealth with MetaTask Investments
           </h1>
           <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-purple-200 mb-6">
-            Start investing with as little as $60. Expert guidance at your
+            Start investing with as low as $30. Expert guidance at your
             fingertips.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -31,7 +31,8 @@ const Home: React.FC = () => {
               href="/register"
               className="px-6 py-3 md:px-8 md:py-4 bg-purple-600 text-white rounded-full text-sm xs:text-md md:text-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out"
             >
-              Get Started
+              
+              Sign Up
             </Link>
             <Link
               href="/login"

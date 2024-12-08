@@ -25,9 +25,11 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
 }) => {
   // State variables
   const [formData, setFormData] = useState({
-    amount: 0,
+    amount: 30,
     wallet_address: "",
   });
+  const [walletError, setWalletError] = useState("");
+  const [amountError, setAmountError] = useState("");
   const { tokenObject } = useToken();
   const { data: userDetails } = useGetUserDetailQuery(tokenObject?.user_id);
   const [withdrawal, { isLoading, isSuccess, isError, error }] =
@@ -39,33 +41,32 @@ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
 
   // Validate the form data
-  if (!formData.wallet_address || formData.amount <= 0) {
-    console.error(
-      "Invalid data: Amount must be greater than 0 and wallet address is required."
-    );
-    return;
+  if (formData.wallet_address.length > 200) {
+    setWalletError("wallet address too long")
+  } else if (formData.amount <= 29){
+    setAmountError("Minimum withdrawal is $30")
+  } else{
+    // Construct the payload
+    const payload = {
+      data: {
+        amount: formData.amount,
+        wallet_address: formData.wallet_address,
+      },
+    };
+  
+  
+    try {
+      await withdrawal(payload).unwrap(); // Call mutation with correct structure
+      setIsSuccessModalOpen(true); // Show success modal after successful withdrawal
+    } catch {
+      console.log("an error occurred while submitting your request")
+    }
   }
 
-  // Construct the payload
-  const payload = {
-    data: {
-      amount: formData.amount,
-      wallet_address: formData.wallet_address,
-    },
-  };
-
-  console.log("Payload to send:", payload); // Log for debugging
-
-  try {
-    await withdrawal(payload).unwrap(); // Call mutation with correct structure
-    setIsSuccessModalOpen(true); // Show success modal after successful withdrawal
-  } catch {
-    console.log("an error occurerd while submitting your request")
-  }
 };
 
 
-  const isWithdrawable = parseFloat(userDetails?.balance ?? "0") > 50;
+  const isWithdrawable = parseFloat(userDetails?.balance ?? "0") > 30;
 
   if (!isOpen) return null;
 
@@ -104,6 +105,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
                 required
               />
+              <p>{walletError}</p>
             </div>
             <div>
               <label className="block text-lg mb-2 font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">
@@ -121,6 +123,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
                 required
               />
+              <p>{amountError}</p>
             </div>
 
             <div className="flex justify-end mt-4">
@@ -128,7 +131,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 type="submit"
                 className="py-3 px-6 text-white bg-gradient-to-r from-pink-400 to-purple-600 rounded-lg font-semibold shadow-md"
               >
-                Submit
+                Submit 
               </button>
             </div>
           </form>

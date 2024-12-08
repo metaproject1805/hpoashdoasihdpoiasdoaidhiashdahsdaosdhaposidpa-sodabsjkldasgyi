@@ -12,6 +12,7 @@ function Header() {
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -136,10 +137,10 @@ function Header() {
           </div>
         ) : (
           <Link
-            href="/register"
+            href="/login"
             className="text-white bg-purple-700 text-[10px] lg:w-[70px] w-[30%] text-center right-[200px] rounded-xl hover:bg-purple-500 p-4 transition-colors duration-200"
           >
-            Sign Up
+            Login
           </Link>
         )}
       </div>
