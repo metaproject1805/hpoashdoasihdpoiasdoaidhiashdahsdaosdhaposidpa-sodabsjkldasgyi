@@ -118,11 +118,11 @@ const PackageCard: React.FC<PackageCardProps> = ({
           )} px-4 py-2 rounded-lg shadow-lg text-white`}
         >
           {price} USDT
-        </span>
+        </span> 
       </p>
 
       <p className="text-gray-400 mt-4">
-        <span className="font-medium">{earnings}</span> earnings daily
+        <span className="font-medium">{earnings}</span> mining income
       </p>
       <p className="text-gray-400">
         Viewing Income: <span className="font-medium">{viewingIncome}</span>
