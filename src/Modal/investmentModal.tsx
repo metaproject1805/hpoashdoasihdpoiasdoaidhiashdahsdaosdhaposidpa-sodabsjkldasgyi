@@ -173,7 +173,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
                     setFormData({ ...formData, price: e.target?.value })
                   }
                   className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
-                  min="20"
+                  min={formData.duration === "14 Days" || Number(formData.price) < 10 ? "10" : "20"}
                   required
                 />
                 {err && <p className="text-red-500">{err}</p>}
