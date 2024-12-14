@@ -54,8 +54,11 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     e.preventDefault();
     setError(null);
 
-    if (Number(formData.price) < 100) {
-      setError("The minimum amount is $100.");
+    if (formData.duration === "14 Days" || Number(formData.price) < 10) {
+      setError("The minimum amount is $10.");
+      return;
+    } else if (Number(formData.price) < 20){
+      setError("The minimum amount is $20.");
       return;
     }
 
@@ -170,7 +173,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
                     setFormData({ ...formData, price: e.target?.value })
                   }
                   className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
-                  min="100"
+                  min="20"
                   required
                 />
                 {err && <p className="text-red-500">{err}</p>}
