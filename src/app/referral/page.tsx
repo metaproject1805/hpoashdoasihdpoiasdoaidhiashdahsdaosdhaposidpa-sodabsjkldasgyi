@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useGetUserDetailQuery } from "@/utils/apiRoutes/apiEndpoint";
 import { useToken } from "@/utils/customHooks";
 import { FRONTBASE_URL } from "@/config";
+import { showErrorMessage } from '@/utils/functions';
 import { Icon } from "@iconify/react";
 
 
@@ -28,9 +29,7 @@ export default function Page() {
 
 
 
-  const LoaderModal = ({ isLoading }: { isLoading: boolean }) => {
-    if (!isLoading) return null;
-
+  const LoaderModal = () => {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-500"></div>
@@ -38,14 +37,14 @@ export default function Page() {
     );
   };
 
-  if (isLoading || error){
-    return(
-    <div className="p-4">
-      {isLoading && <LoaderModal isLoading={isLoading} />}
-      {/* {error && <p className="text-red-500">{error}</p>} */}
-    </div>
-    )
-  } else{
+  // if (isLoading || error){
+  //   return(
+  //   <div className="p-4">
+  //     {isLoading && <LoaderModal/>}
+  //     {error && <p className="text-red-500">{showErrorMessage(error)}</p>}
+  //   </div>
+  //   )
+  // } else{
     return (
       <div className="p-4">
         {data?.referred && data.referred.length >= 1 ? (
@@ -166,4 +165,4 @@ export default function Page() {
       </div>
     );
   }
-}
+// }
