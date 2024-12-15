@@ -37,14 +37,13 @@ export default function Page() {
     );
   };
 
-  // if (isLoading || error){
-  //   return(
-  //   <div className="p-4">
-  //     {isLoading && <LoaderModal/>}
-  //     {error && <p className="text-red-500">{showErrorMessage(error)}</p>}
-  //   </div>
-  //   )
-  // } else{
+  if (isLoading){
+    return(
+    <div className="p-4">
+      <LoaderModal/>
+    </div>
+    )
+  } else{
     return (
       <div className="p-4">
         {data?.referred && data.referred.length >= 1 ? (
@@ -165,4 +164,4 @@ export default function Page() {
       </div>
     );
   }
-// }
+}
