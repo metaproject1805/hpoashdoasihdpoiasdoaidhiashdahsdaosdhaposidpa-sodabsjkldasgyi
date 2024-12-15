@@ -1,98 +1,24 @@
 "use client"
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import jwt from "jsonwebtoken";
-import { BASE_URL, FRONTBASE_URL } from "@/config";
-import Cookies from "js-cookie";
+import React, { useState } from "react";
+import { useGetUserDetailQuery } from "@/utils/apiRoutes/apiEndpoint";
+import { useToken } from "@/utils/customHooks";
+import { FRONTBASE_URL } from "@/config";
 import { Icon } from "@iconify/react";
 
 
-interface UserDetails {
-  ref_code: string;
-}
-
-interface DecodedToken {
-  user_id: string;
-  exp: number;
-}
-
-interface ActivePackage {
-  level: string;
-  payment_status: string;
-}
-
-interface Referral {
-  username: string;
-  active: boolean;
-  active_package: ActivePackage | null;
-}
-
 export default function Page() {
-  const [userId, setUserId] = useState<string | null>(null);
-  const [referrals, setReferrals] = useState<Referral[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const { tokenObject } = useToken();
+  const { data, isLoading, error } = useGetUserDetailQuery(tokenObject?.user_id);
   const [showReferralModal, setShowReferralModal] = useState(false);
-  const [userDetails, setUserDetails] = useState<UserDetails | null>(null);
   const [copied, setCopied] = useState(false);
-
-  const accessToken = Cookies.get("access-token");
-
-  // Decode JWT and set userId
-  useEffect(() => {
-    if (accessToken) {
-      try {
-        const decoded = jwt.decode(accessToken) as DecodedToken;
-        const currentTime = Math.floor(Date.now() / 1000);
-
-        if (decoded.exp && decoded.exp < currentTime) {
-          console.error("Token has expired");
-          setError("Session expired. Please log in again.");
-          return;
-        }
-
-        setUserId(decoded.user_id);
-      } catch (error) {
-        console.error("Failed to decode token:", error);
-        setError("Invalid token. Please log in again.");
-      }
-    }
-  }, [accessToken]);
-
-  // Fetch referrals
-  useEffect(() => {
-    const fetchReferrals = async () => {
-      if (userId && accessToken) {
-        try {
-          const response = await axios.get(
-            `${BASE_URL}/api/user/detail/${userId}/`,
-            {
-              headers: {
-                Authorization: `Bearer ${accessToken}`,
-              },
-            }
-          );
-          setUserDetails(response.data);
-          setReferrals(response.data.referred || []);
-        } catch (error) {
-          console.error("Error fetching referrals:", error);
-          setError("Failed to fetch referral data.");
-        } finally {
-          setLoading(false); // Stop loading
-        }
-      }
-    };
-
-    fetchReferrals();
-  }, [userId, accessToken]);
 
   const handleReferralModalClose = () => {
     setShowReferralModal(false);
   };
 
     const handleCopyReferral = () => {
-      if (userDetails) {
-        const referralLink = `${FRONTBASE_URL}/register?ref=${userDetails.ref_code}`;
+      if (data) {
+        const referralLink = `${FRONTBASE_URL}/register?ref=${data.ref_code}`;
         navigator.clipboard.writeText(referralLink);
         setCopied(true);
 
@@ -112,17 +38,17 @@ export default function Page() {
     );
   };
 
-  if (loading || error){
+  if (isLoading || error){
     return(
     <div className="p-4">
-      {loading && <LoaderModal isLoading={loading} />}
-      {error && <p className="text-red-500">{error}</p>}
+      {isLoading && <LoaderModal isLoading={isLoading} />}
+      {/* {error && <p className="text-red-500">{error}</p>} */}
     </div>
     )
   } else{
     return (
       <div className="p-4">
-        {referrals && referrals.length >= 1 ? (
+        {data?.referred && data.referred.length >= 1 ? (
           <div className="bg-black bg-opacity-10 shadow-lg rounded-xl p-8 max-w-2xl mx-auto mt-10">
             <h2 className="text-2xl font-semibold mb-6">Referrals</h2>
             <div className="overflow-x-auto">
@@ -140,7 +66,7 @@ export default function Page() {
                   </tr>
                 </thead>
                 <tbody>
-                  {referrals.map((referral, index) => (
+                  {data.referred.map((referral, index) => (
                     <tr
                       key={index}
                       className="border-t hover:bg-gray-100 transition-all duration-300"
@@ -199,7 +125,7 @@ export default function Page() {
         )}
 
         {/* Referral Link Modal */}
-        {showReferralModal && userDetails && (
+        {showReferralModal && data && (
           <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
             <div className="bg-black bg-opacity-10 p-8 rounded-lg shadow-lg max-w-md w-full">
               <h2 className="text-2xl font-bold mb-4 text-center text-purple-400">
@@ -211,7 +137,7 @@ export default function Page() {
               </p>
               <div className="flex justify-between items-center bg-black bg-blur bg-opacity-10 p-4 rounded-lg mb-4 shadow-inner">
                 <span className="text-white text-sm">
-                  {`${FRONTBASE_URL}/register?ref=${userDetails.ref_code}`}
+                  {`${FRONTBASE_URL}/register?ref=${data.ref_code}`}
                 </span>
                 <div className="flex items-center">
                   <Icon

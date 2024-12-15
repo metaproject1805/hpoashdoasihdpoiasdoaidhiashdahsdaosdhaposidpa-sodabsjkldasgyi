@@ -122,6 +122,18 @@ export interface UserNotificationInterface {
   read: boolean;
 }
 
+
+interface ActivePackage {
+  level: string;
+  payment_status: string;
+}
+
+interface Referral {
+  username: string;
+  active: boolean;
+  active_package: ActivePackage | null;
+}
+
 export interface UserDetails {
   active: boolean;
   active_package: {
@@ -143,7 +155,7 @@ export interface UserDetails {
   ref_bonus: string;
   ref_by: string | null;
   ref_code: string;
-  referred: [];
+  referred: Referral[];
   username: string;
   weekly_salary: number;
   investment: {
