@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             Grow Your Wealth with MetaTask Investments
           </h1>
           <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-purple-200 mb-6">
-            Start investing with as low as $10 and a welcome bonus of $20. Expert guidance at your
+          Get started with a $2 welcome bonus and start invest with as little as $10. Expert guidance at your
             fingertips.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
