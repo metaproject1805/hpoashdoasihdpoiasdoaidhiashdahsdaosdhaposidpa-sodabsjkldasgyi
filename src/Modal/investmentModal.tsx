@@ -54,7 +54,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     e.preventDefault();
     setError(null);
 
-    if (formData.duration === "14 Days" || Number(formData.price) < 10) {
+    if (formData.duration === "14 Days" && Number(formData.price) < 10) {
       setError("The minimum amount is $10.");
       return;
     } else if (Number(formData.price) < 20){

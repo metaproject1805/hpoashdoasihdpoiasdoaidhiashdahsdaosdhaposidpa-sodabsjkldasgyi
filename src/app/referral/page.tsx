@@ -19,7 +19,7 @@ export default function Page() {
 
     const handleCopyReferral = () => {
       if (data) {
-        const referralLink = `${FRONTBASE_URL}/register?ref=${data.ref_code}`;
+        const referralLink = `${FRONTBASE_URL}/register?ref=${data.username}`;
         navigator.clipboard.writeText(referralLink);
         setCopied(true);
 
@@ -135,7 +135,7 @@ export default function Page() {
               </p>
               <div className="flex justify-between items-center bg-black bg-blur bg-opacity-10 p-4 rounded-lg mb-4 shadow-inner">
                 <span className="text-white text-sm">
-                  {`${FRONTBASE_URL}/register?ref=${data.ref_code}`}
+                  {`${FRONTBASE_URL}/register?ref=${data.username}`}
                 </span>
                 <div className="flex items-center">
                   <Icon
