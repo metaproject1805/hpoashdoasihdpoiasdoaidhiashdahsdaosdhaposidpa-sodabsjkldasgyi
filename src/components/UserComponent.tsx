@@ -46,7 +46,7 @@ const ProfilePage = ({
 
   const handleCopyReferral = () => {
     if (userDetails) {
-      const referralLink = `${FRONTBASE_URL}/register?ref=${userDetails.ref_code}`;
+      const referralLink = `${FRONTBASE_URL}/register?ref=${userDetails.username}`;
       navigator.clipboard.writeText(referralLink);
       setCopied(true);
 
@@ -125,7 +125,7 @@ const ProfilePage = ({
                 </div>
                 <div className="flex justify-between border-b border-gray-300 pb-2">
                   <strong>Referral Code:</strong>
-                  <span>{userDetails.ref_code}</span>
+                  <span>{userDetails.username}</span>
                 </div>
   
                 <div className="flex justify-between pb-2">
@@ -224,7 +224,7 @@ const ProfilePage = ({
               </p>
               <div className="flex justify-between items-center bg-black bg-blur bg-opacity-10 p-4 rounded-lg mb-4 shadow-inner">
                 <span className="text-white text-sm">
-                  {`${FRONTBASE_URL}/register?ref=${userDetails.ref_code}`}
+                  {`${FRONTBASE_URL}/register?ref=${userDetails.username}`}
                 </span>
                 <div className="flex items-center">
                   <Icon
