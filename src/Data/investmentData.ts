@@ -4,7 +4,7 @@ import { InvestmentPlanInterface } from "@/utils/types";
 export const investmentPlans: InvestmentPlanInterface[] = [
   {
     plan: "14-days investment plan",
-    dailyProfit: "1%",
+    dailyProfit: "$1",
     minInvestment: "10 USDT",
     periodicInterest: "114%",
     duration: "14 Days",

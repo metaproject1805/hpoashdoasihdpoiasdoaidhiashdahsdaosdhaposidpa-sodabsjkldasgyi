@@ -58,8 +58,10 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     if (formData.duration === "14 Days" && Number(formData.price) < 10) {
       setError("The minimum amount is $10.");
       return;
+    } else if (formData.duration==="1080 Days" && Number(formData.price) < Number(formData.minInvestment.slice(0, 4))){
+      setError(`The minimum amount is ${formData.minInvestment.slice(0,4)}.`);
+      return;
     } else if (Number(formData.price) < Number(formData.minInvestment.slice(0, 3))){
-      console.log(formData.minInvestment.slice(0,3))
       setError(`The minimum amount is ${formData.minInvestment.slice(0,3)}.`);
       return;
     }
@@ -175,7 +177,11 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
                     setFormData({ ...formData, price: e.target?.value })
                   }
                   className="mt-1 block mb-2 w-full p-4 border bg-black text-pink-400 bg-opacity-50 border-gray-300 rounded-lg shadow-sm"
-                  min={formData.duration === "14 Days" || Number(formData.price) < 10 ? "10" : "20"}
+                  min={
+                    formData.duration === "14 Days" && Number(formData.price) < 10 ? "10" : 
+                    formData.duration === "1080 Days" && Number(formData.price) < Number(formData.minInvestment.slice(0, 4)) ? `${Number(formData.minInvestment.slice(0, 4))}` : 
+                    `${Number(formData.minInvestment.slice(0, 3))}`
+                  }
                   required
                 />
                 {err && <p className="text-red-500">{err}</p>}
