@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import { WALLET_ID } from "../config";
 import { useBuyInvestmentMutation } from "@/utils/apiRoutes/apiEndpoint";
+import { InvestmentPlanInterface } from "@/utils/types";
 import { showErrorMessage } from "@/utils/functions";
 
 interface CombinedModalProps {
-  selectedPackage: {
-    duration: string;
-  } | null;
+  selectedPackage: InvestmentPlanInterface | null;
   closeModal: () => void;
 }
 
@@ -28,6 +27,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     price: "",
     payment_slip: null as File | null,
     wallet_id: "",
+    minInvestment : ""
   });
 
   useEffect(() => {
@@ -37,6 +37,7 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
         price: "",
         payment_slip: null,
         wallet_id: "",
+        minInvestment : selectedPackage.minInvestment
       });
     }
   }, [selectedPackage, isSecondModalOpen]);
@@ -57,8 +58,9 @@ const CombinedModal: React.FC<CombinedModalProps> = ({
     if (formData.duration === "14 Days" && Number(formData.price) < 10) {
       setError("The minimum amount is $10.");
       return;
-    } else if (Number(formData.price) < 20){
-      setError("The minimum amount is $20.");
+    } else if (Number(formData.price) < Number(formData.minInvestment.slice(0, 3))){
+      console.log(formData.minInvestment.slice(0,3))
+      setError(`The minimum amount is ${formData.minInvestment.slice(0,3)}.`);
       return;
     }
 
