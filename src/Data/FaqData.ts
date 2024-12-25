@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "What is the minimum withdrawal amount?",
     answer:
-      "The minimum amount required to make a withdrawal is set at $20. Users can only request withdrawals once their earnings or balance reach at least $20.",
+      "The minimum amount required to make a withdrawal is set at $10. Users can only request withdrawals once their earnings or balance reach at least $10.",
   },
 
   {

@@ -25,7 +25,7 @@ const WithdrawalModal: React.FC<WithdrawalModalProps> = ({
 }) => {
   // State variables
   const [formData, setFormData] = useState({
-    amount: 20,
+    amount: 10,
     wallet_address: "",
   });
   const [walletError, setWalletError] = useState("");
@@ -43,8 +43,8 @@ const handleSubmit = async (e: React.FormEvent) => {
   // Validate the form data
   if (formData.wallet_address.length > 200) {
     setWalletError("wallet address too long")
-  } else if (formData.amount < 20){
-    setAmountError("Minimum withdrawal is $20")
+  } else if (formData.amount < 10){
+    setAmountError("Minimum withdrawal is $10")
   } else{
     // Construct the payload
     const payload = {
@@ -66,7 +66,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 };
 
 
-  const isWithdrawable = parseFloat(userDetails?.balance ?? "0") >= 20;
+  const isWithdrawable = parseFloat(userDetails?.balance ?? "0") >= 10;
 
   if (!isOpen) return null;
 
