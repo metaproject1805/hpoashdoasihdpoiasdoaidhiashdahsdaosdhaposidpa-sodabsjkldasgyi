@@ -51,6 +51,7 @@ const validateForm = (): boolean => {
     confirmPassword?: string;
   } = {};
 
+  const usernamePattern = /^(?!.*__)[a-zA-Z0-9](?:[a-zA-Z0-9_]*[a-zA-Z0-9])?$/;
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const hasLowercase = /[a-z]/.test(password);
   const hasUppercase = /[A-Z]/.test(password);
@@ -62,15 +63,25 @@ const validateForm = (): boolean => {
     errors.email = "Email is required.";
   } else if (!emailPattern.test(email)) {
     errors.email = "Invalid email format.";
+  } else if (email.length > 30){
+    errors.email = "password too long"
   }
 
   if (!username) {
-    errors.username = "Username is required.";
+    errors.username = "Username must be 3-12 characters, alphanumeric, with underscores allowed but not at the start, end, or consecutively.";
+  } else if (!usernamePattern.test(username)){
+    errors.username = "Invalid username."
+  } else if  (username.length > 12){
+    errors.username = "username too long"
+  } else if (username.length < 3){
+    errors.username = "username too short"
   }
 
   if (!password) {
     errors.password = "Password is required.";
-  } else {
+  } else if (password.length > 15){
+    errors.password = "password too long"
+  }else {
     if (!hasLowercase) {
       errors.password = "Password must include at least one lowercase letter.";
     } else if (!hasUppercase) {
