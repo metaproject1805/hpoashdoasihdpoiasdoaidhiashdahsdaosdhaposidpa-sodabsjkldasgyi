@@ -51,7 +51,7 @@ export default function VideoList({
         ))
       ) : (
         <p className="text-center col-span-full text-xl text-gray-500 dark:text-gray-300">
-          No videos available
+          All tasks done! See you tomorrow!
         </p>
       )}
     </div>
